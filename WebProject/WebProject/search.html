@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+      <meta >
+      <title> Tastylicious </title>
+   
+    <link rel="stylesheet" href="lidhja.css">
+<style>
+    
+.Block{
+    display: block;
+    width: 40%;
+    height:fit-content;
+    background-color: chocolate;
+    opacity: 0.9;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-bottom: 5%;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+.label{
+    font-size: 20px;
+    color: white;
+}
+input, select{
+    padding: 5px;
+}
+
+.button{
+    background-color: white;
+    border: none;
+    color: chocolate    ;
+    padding: 10px;
+  float: left;
+}
+
+</style>
+    </head>
+    <body>
+    <div class="Background"> 
+ 
+      <img src="background.png" class="BackFoto" > 
+    </div>
+<div class="Block"> 
+           <form action="search.php" method="post">
+     <p class="label"> Search by:  </p> 
+      <p></p>
+     <p class="label">Name: </p> 
+      <input type="search" name="name"> <p></p>
+       <p class="label">Ingredients: </p>
+      <input type="search" name="ingredients"> <p></p>
+       <p class="label"> Category:</p>
+      <select name="category" >
+          <option ></option>
+          <option >Breakfast</option>
+          <option >Snack</option>
+          <option >Dinner</option>
+      </select>
+      <p></p>
+      <button class="button"> Search</button>
+  </form>
+</div>
+</body>
+  </html>
